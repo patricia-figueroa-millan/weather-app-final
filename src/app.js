@@ -6,6 +6,7 @@ const hbs = require("hbs")
 const path = require("path")
 const geocodificacion = require("./utils/geocodificacion")
 const pronostico = require("./utils/pronostico")
+const port = process.env.PORT || 3000
 
 
 // express() función to create a new Express application
@@ -84,7 +85,7 @@ app.get("*", function(request,response){
         errorMessage: "Page not found!"
     })
 })
-app.listen(3000,function(){
+app.listen(port,function(){
     console.log("Server is up on port 3000")
     console.log(path.join(__dirname, "../", '/views/partials'))
     //C:\Users\Elizabeth\Desktop\MARZO - JUNIO 2021 - copia\Lenguajes Web\patricia-figueroa.github.io-master\weather-app-final\views\partials\header.hbs
