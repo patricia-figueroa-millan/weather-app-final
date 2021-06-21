@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel="stylesheet" href="/css/styles.css">-->
+    <link rel="stylesheet" href="/css/mystyles.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    {{> header}}
+    <section class="section">
+        <div class="container">
+            <div class="notification is-light is-link">
+                <div class="box ">
+                            Hi! <br />I hope you will find this Weather Forecast App useful.
+                                <div class="field has-addons">
+                                        <div class="control">
+                                            <input type="text" placeholder="Location">
+                                        </div>
+                                        <div class="control" >
+                                            <a class="button is-info" id="submit">
+                                            Search
+                                            </a>
+                                        </div>
+                                    
+                                </div>
+                    <p id="message-1"></p>
+                    <p id="message-2"></p>
+                    <p id="message-3"></p>
+                    <p id="message-4"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    {{> footer}}
+    
+</body>
+</html>
