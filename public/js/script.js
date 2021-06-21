@@ -1,4 +1,3 @@
-console.log("Hello from client side!")
 
 const addres = document.querySelector("input")
 const boton = document.querySelector("#submit")
