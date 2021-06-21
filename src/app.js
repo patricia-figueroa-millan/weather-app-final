@@ -1,5 +1,4 @@
 // Require express
-const { response } = require("express")
 const express = require("express")
 // Require hbs for load partials
 const hbs = require("hbs")
